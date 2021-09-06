@@ -147,8 +147,7 @@ header .nav nav .showcase .showcase-menu li {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
-  text-transform: uppercase;
+  font-size: 20px;
   text-align: center;
   overflow: hidden;
   background-position: center center;
@@ -156,6 +155,10 @@ header .nav nav .showcase .showcase-menu li {
   background-size: cover;
   position: relative;
   z-index: 1;
+  color: #380303;
+}
+header .nav nav .showcase .showcase-menu li img{
+  width: 300px;
 }
 header .nav nav .showcase .showcase-menu li.overlay:before {
   content: "";
