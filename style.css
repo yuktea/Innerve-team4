@@ -43,31 +43,22 @@ header .nav {
   top: 0;
   width: 100%;
   height: 80px;
-  
-
-  /* added lines 49-53  to add flex prop*/
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 5vw;
 }
 header .nav .title {
   line-height: 80px;
-  /* removed padding */
-  /* padding: 0 120px; */
+  padding: 0 120px;
   font-size: 24px;
   color: #fff;
   font-weight: 900;
 }
 header .nav .toggle {
-  /* removed commented properties 64,65,68,69,70 */
-  /* position: absolute; */
-  /* margin: auto; */
+  position: absolute;
+  margin: auto;
   width: 46px;
   height: 46px;
-  /* right: 120px; */
-  /* top: 0;
-  bottom: 0; */
+  right: 120px;
+  top: 0;
+  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -123,9 +114,7 @@ header .nav nav {
   transition: opacity 0.5s ease;
 }
 header .nav nav .showcase {
-  /* made background of showcase a bit transparent */
-  /* background: rgb(255, 193, 193); */
-  background-color: rgba(0, 0, 0, 0.486);            
+  background: rgb(255, 193, 193);
   flex: 1;
   color: #fff;
   display: flex;
@@ -158,10 +147,7 @@ header .nav nav .showcase .showcase-menu li {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* added relative unit for fonts */
-  /* font-size: 40px; */
-  font-size: 1.2rem;
-  text-transform: uppercase;
+  font-size: 20px;
   text-align: center;
   overflow: hidden;
   background-position: center center;
@@ -169,6 +155,10 @@ header .nav nav .showcase .showcase-menu li {
   background-size: cover;
   position: relative;
   z-index: 1;
+  color: #380303;
+}
+header .nav nav .showcase .showcase-menu li img{
+  width: 300px;
 }
 header .nav nav .showcase .showcase-menu li.overlay:before {
   content: "";
@@ -181,25 +171,15 @@ header .nav nav .showcase .showcase-menu li.overlay:before {
   z-index: -1;
 }
 header .nav nav .menu {
-  /* background: rgb(248, 78, 158); */
-  background: #DE5D83;
+  background: rgb(248, 78, 158);
   flex: 1;
-  /* added flex properties */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
 }
 header .nav nav .menu ul {
   width: 100%;
   padding: 80px 48px 24px 48px;
   list-style-type: none;
-  /* removed max height */
-  /* max-height: 100%; */
-  height: 100vh;
+  max-height: 100%;
   overflow-y: auto;
-
-  
 }
 header .nav nav .menu ul::-webkit-scrollbar {
   width: 6px;
@@ -234,8 +214,6 @@ header .nav nav .menu ul::-webkit-scrollbar-track:active {
 header .nav nav .menu ul::-webkit-scrollbar-corner {
   background: transparent;
 }
-
-
 header .nav nav .menu ul li {
   display: flex;
   flex-direction: row;
@@ -243,37 +221,23 @@ header .nav nav .menu ul li {
 }
 header .nav nav .menu ul li .number {
   display: inline-block;
-  /* removed padding */
-  /* padding: 0 0 0 80px; */
-  padding: 0 5vw;
+  padding: 0 0 0 80px;
   overflow: hidden;
 }
 header .nav nav .menu ul li .number span {
   display: block;
-  /* gave relative unit to font-size */
-  /* font-size: 48px; */
-  font-size: 2rem;
+  font-size: 48px;
   font-weight: 400;
   transition: transform 0.25s ease;
   transform: translateY(100%);
 }
 header .nav nav .menu ul li a {
   display: inline-block;
-
-  /* relative unit to font-size and removed padding */
-  /* font-size: 48px; */
-  font-size: 2rem;
+  font-size: 48px;
   color: rgba(255, 255, 255, 0.822);
   line-height: 1;
-  /* padding: 24px 0 24px 80px; */
+  padding: 24px 0 24px 80px;
   transition: transform 0.25s ease;
-}
-
-/* added new query selector */
-header .nav nav .menu ul{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
 }
 header .nav nav .menu ul li:hover a {
   transform: translateX(20px);
@@ -350,8 +314,6 @@ header .nav nav.open .showcase {
   }
 }
 
-
-
 .animate__slideInUp {
   -webkit-animation-name: slideInDown;
   animation-name: slideInDown;
@@ -374,19 +336,3 @@ header .nav nav.open .showcase {
   color: #fff;
   box-shadow: 0 1px 0 0 #EF3340;
 }
-
-
-
-
-/* media queries added */
-@media only screen and (max-width:1000px) {
-    
-    header .nav nav .showcase .showcase-container{
-        display: none;
-    }
-    header .nav nav .menu .main-menu{
-        width: 100vw;
-    }
-    
-}
-
