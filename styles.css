@@ -82,15 +82,18 @@ header .nav .toggle {
   align-items: center;
   z-index: 10;
   cursor: pointer;
+
+
+
 }
 header .nav .toggle .bar {
   position: relative;
-  width: 40px;
-  height: 2px;
-  background: #fff;
+  width: 30px;
+  height: 4px;
+  background: black;
 }
 header .nav .toggle .bar:before, header .nav .toggle .bar:after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 100%;
@@ -375,7 +378,7 @@ header .nav nav.open .showcase {
   position: relative;
   flex: 1;
   padding: 80px 40px 40px;
-  background-image: url('https://wallpapercave.com/wp/wp1937304.png');
+  background-color: ;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -455,7 +458,7 @@ body-footer {
 }
 
 .accordion {
-  background: rgb(166, 194, 221);
+  background: #DE5D83;
   width: 100%;
   min-width: 150px;
   display: block;
@@ -470,7 +473,7 @@ body-footer {
 
 .tabs {
     display: inline-block;
-    background-color: rgb(166, 194, 221);
+    background-color: #DE5D83;
     border-right: gray 1px solid;
     width: 80px;
     height: 200px;
@@ -565,7 +568,7 @@ body-footer {
     content: '\f215';
 }
 .insta-icon a:after {
-    background-image: linear-gradient(#7fc121, #298733);
+    background-image: linear-gradient(#c76baa, #bd62a0);
 }
 .youtube-icon a:before, .youtube-icon a:after {
     content: '\f213';
