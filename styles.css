@@ -616,5 +616,8 @@ body-footer {
     margin-top: 25px;
     margin-left: -20px;
   }
+  .logo:hover {
+    transform: scale(1.0); 
+  }
 }
 
