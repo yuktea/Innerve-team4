@@ -42,6 +42,7 @@ a {
   color: #ffffff;
 }
 
+
 header {
   z-index: 5;
   opacity: 0;
@@ -579,6 +580,14 @@ body-footer {
 
 
 
+
+.logo{
+  height: 120px;
+	padding: 10px;
+	margin-top: 60px;
+}
+
+
 @media screen and (max-width :740px)
 {
   .social-links a:before, .social-links a:after{
@@ -596,4 +605,10 @@ body-footer {
     height: 60px;
     
   }
+  .logo{
+    height: 90px;
+    margin-top: 25px;
+
+  }
 }
+
