@@ -30,7 +30,7 @@ $(document).ready(function() {
 	
 	tl.to(header, .25, {
 		opacity: 1,
-		delay: .5
+		// delay: .5
 	});
 	
 	tl.to(content, .25, {
@@ -127,3 +127,5 @@ function changeActive(e) {
 	$('.main-menu li').removeClass('active');
 	$(e).addClass('active');
 }
+
+
