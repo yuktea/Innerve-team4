@@ -474,7 +474,8 @@ body-footer {
 
 .tabs {
     display: inline-block;
-    background-color: #DE5D83;
+    background-color: #DE5D83
+    ;
     border-right: gray 1px solid;
     width: 80px;
     height: 200px;

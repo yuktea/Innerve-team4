@@ -1,3 +1,7 @@
+
+
+let i=0;
+
 $(document).ready(function() {
 	navNumbers();
 	backToDefault();
@@ -36,14 +40,14 @@ $(document).ready(function() {
 	tl.to(content, .25, {
 		opacity: 1
 	}, '-=.25');
-	
+	// changed from 3 to 0
 	tl.call(function() {
 		toggleMenu();
-	}, null, null, 3);
-	
+	}, null, null, 0);
+	// changed from 4 to 0
 	tl.call(function() {
 		toggleMenu();
-	}, null, null, 4.5);
+	}, null, null, 0);
 
 });
 
