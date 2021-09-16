@@ -578,15 +578,23 @@ body-footer {
     background-image: linear-gradient(#df192a, #c41222);
 }
 
+.map-marker-icon a:before, .map-marker-icon a:after {
+  content: '\f417';
+}
+
+.map-marker-icon a:after {
+  background-image: linear-gradient(#e2771f, #e68333);
+}
+
 
 
 
 .logo{
-  height: 120px;
+  height: 80px;
 	padding: 10px;
-	margin-top: 60px;
+	margin-top: 6px;
   transition: transform .2s; /* Animation */
-  margin-left: -80px;
+  margin-left: -65px;
 
 }
 .logo:hover {
@@ -618,14 +626,14 @@ body-footer {
 
   .circle {
     width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: #83478b;
-    margin-right: 15px;
+    height: 53px;
+    border-radius: 80%;
+    background: #7343a0;
+    margin-right: 10px;
     text-align: center;
     color: white;
     line-height: 50px;
-    font-size: 28px;
+    font-size: 40px;
   }
   .mobile-footer {
     position: relative;
@@ -637,7 +645,7 @@ body-footer {
 
 
     bottom: 0;
-  margin-top: auto;
+  margin-top: 20px;
   position: absolute;
   width: 100vw;
   /* height: 15vh; */
