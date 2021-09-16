@@ -133,3 +133,79 @@ function changeActive(e) {
 }
 
 
+
+
+
+
+
+
+
+
+var ping = new Audio('http://tmp.janustech.net/notes/pin.mp3');
+var timelines = {};
+
+$('.content .circle').each(function () {
+  var $this = $(this);
+  var id = '#' + $this.attr('id');
+  var tl = new mojs.Timeline();
+
+  const circle = new mojs.Html({
+    el: id,
+    left: '50%',
+    top: '50%',
+    scale: {
+      1: 0 },
+
+    duration: 500,
+    easing: 'cubic.out' }).
+  then({
+    scale: {
+      0: 1,
+      duration: 500 } });
+
+
+
+  const burst = new mojs.Burst({
+    parent: id,
+    radius: {
+      0: 200 },
+
+    count: 7,
+    children: {
+      fill: { 'cyan': 'yellow' },
+      radius: 10,
+      duration: 2000 } });
+
+
+
+  tl.add(circle, burst);
+
+  timelines[$this.attr('id')] = tl;
+});
+
+var stopX = $('#main-notice').parent().width();
+
+stopX += $('#main-notice').width() / 2 - 100;
+
+const notice = new mojs.Html({
+  el: '#main-notice',
+  x: {
+    0: 1000 },
+
+  duration: 2000,
+  easing: 'cubic.in' });
+
+
+notice.play();
+
+//new MojsPlayer({ add: notice });
+
+$('.circle').on('click', function (e) {
+  var tl = timelines[$(this).attr('id')];
+
+  ping.play();
+  tl.replay();
+});
+
+
+
